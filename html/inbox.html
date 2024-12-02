@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inbox Page</title>
+    <link rel="stylesheet" href="../css/inbox.css">
+    <link rel="shortcut icon" href="../images/icons8-todo-list-48.png">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+<div class="container">
+    <nav>
+        <section class="profil">
+            <img src="../images/icons8-test-account-48-removebg-preview.png" alt="profil">
+        </section>
+        <section class="tasks">
+            <ul>
+                <li>
+                    <a href=""><img src="../images/icons8-task-24.png" alt="add task"></a>
+                </li>
+                <li>
+                    <a href=""> <img src="../images/icons8-priority-48.png" alt=""></a>
+                </li>
+                <li>
+                    <a href=""> <img src="../images/icons8-search-50.png" alt=""></a>
+                </li>
+            </ul>
+        </section>
+        
+        <section class="notification">
+            <ul>
+                <li>
+                    <a href="">  <img src="../images/icons8-notification-50-removebg-preview.png" alt=""></a>
+                </li>
+                <li>
+                    <a href=""> <img src="../images/icons8-setting-50.png" alt="setting"></a>
+                </li>
+            </ul>
+           
+
+        </section>
+      
+    </nav>
+    <section class="categories">
+        <div class="list-categories">
+            <ul>
+                <li class="category-item"><a href="inbox.html">All</a></li>
+                <li class="category-item"><a href="today.html">Today</a></li>
+                <li class="category-item">Next 7 Days</li>
+                <li class="category-item">Inbox</li>
+            </ul>
+        </div>
+    </section>
+    <section class="All-section">
+        <div class="header">
+            <img src="../images/icons8-menu-50.png" alt="">
+            <h3>All</h3>
+        </div>
+        <div class="add-item-section">
+            <input type="text" class="add-item-input" placeholder="Add a new task..." id="new-task-input">
+            <div class="calendar-section">
+                <img src="../images/icons8-calendrier-100.png" id="calendar-icon" class="calendar-icon" alt="calendar">
+              
+              </div>
+              <select id="priority-select">
+                <option value="low">Low</option>
+                <option value="medium">Medium</option>
+                <option value="high">High</option>
+            </select>
+
+        </div>
+        <!-- Tasks Section -->
+        <div class="tasks-section">
+           <h3 class="tasks-header">Tasks</h3>
+           <ul id="tasks-list" class="tasks-list">
+       <!-- Tasks will be dynamically added here -->
+        </ul>
+        </div>
+        <!-- Calendar modal (hidden by default) -->
+        <div id="calendar-modal" class="calendar-modal">
+            <div class="calendar-container">
+              <h3>Select Date & Time</h3>
+              <input type="datetime-local" id="calendar-date-time" class="calendar-input">
+              <div class="modal-buttons">
+                <button id="cancel-btn" class="btn cancel-btn">Cancel</button>
+                <button id="ok-btn" class="btn ok-btn">OK</button>
+              </div>
+            </div>
+          </div>
+        <!-- Add this to your HTML where you have the new task input -->
+
+
+
+
+    <div class="completed-tasks-section">
+    <h2 class="tasks-header">Completed Tasks</h2>
+      <ul id="completed-tasks-list" class="tasks-list"></ul>
+    </div>
+          
+  
+    </section>
+    <section class="detailsection" id="detail-section">
+        
+    </section>
+    <!--Priorities section-->
+    <!-- Add this to your HTML where you have the new task input -->
+
+
+</div>
+
+
+
+
+
+
+<script src="../js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,492 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', Arial, sans-serif;
+
+}
+.container
+{
+    width:100%;
+    height:100vh;
+    display: flex;
+}
+.container nav 
+{
+    width:5%;
+    height:100%;
+    border-right: 1px solid #ccc;
+    display: flex;
+    flex-direction: column;
+    background-color: #3f54b9;
+}
+.container nav .profil
+{
+    width:100%;
+    height:10%;
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container nav .profil img
+{
+    width:40px;
+    height:40px;
+    margin-top: 10px;
+}
+.container nav .tasks
+{
+    width:100%;
+    height:70%;
+   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container nav .tasks ul
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+    margin-top: 20px;
+}
+.container nav .tasks ul li
+{
+    margin-bottom: 10px;
+}
+.container nav .tasks img 
+{
+    width:30px;
+    height:30px;
+    margin-top: 20px;
+    opacity: 0.5;
+}
+.container nav .tasks img:hover 
+{
+    opacity: 1;
+}
+.container nav .notification img
+{
+    width:30px;
+    height:30px;
+    opacity: 0.5;
+}
+.container nav .notification img:hover 
+{
+    opacity: 1;
+}
+.container nav .notification
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+.container nav .notification ul
+{
+    list-style: none;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container nav .notification ul li
+{
+    margin-bottom: 10px;
+}
+.container .categories
+{
+    width:20%;
+    height:100%;
+    background-color: #90caf92a;
+    display: flex;
+    flex-direction: column;
+
+}
+.container .categories .list-categories
+{
+    width:100%;
+    height:35%;
+  
+}
+.container .categories .list-categories ul
+{
+    list-style: none;
+    width:100%;
+    height:100%;
+    padding:10px;
+
+}
+.container .categories .list-categories ul .category-item {
+  padding: 10px 20px;
+  font-size: 15px;
+  color: #333333b4;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  margin-bottom: 10px;
+}
+
+.container .categories .list-categories ul .category-item a
+{
+ text-decoration: none;
+ font-size: 15px;
+  color: #333333b4;
+}
+  
+  .category-item:hover {
+    background-color: #90caf954; /* Green hover background */
+    color: #fff; /* White text on hover */
+    border-radius: 10px;
+  }
+  
+  .category-item:active {
+    background-color: #90caf954 /* Darker green for click effect */
+  }
+
+.container .All-section
+{
+    width:40%;
+    height:100%;
+    border-right: 1px solid #cccccc25;
+    display: flex;
+    flex-direction: column;
+}
+.container .All-section .header
+{
+    width:100%;
+    height:10%;
+    
+    padding:15px;
+    display:flex;
+}
+.container .All-section .header img 
+{
+    width:28px;
+    height:28px;
+    margin-right: 7px;
+}
+.container .All-section .header h3
+{
+    margin-top: 3px;
+}
+.container .add-item-section
+{
+    width:100%;
+    height:10%;
+    
+    display: flex;
+    align-items: center;
+    background: #ffffff;
+    border-radius: 8px;
+    gap: 10px;
+    padding: 10px;
+    
+    
+  }
+  .container .add-item-section img
+  {
+    width:28px;
+    height:28px;
+  }
+
+  .calendar-section {
+    position: relative;
+  }
+  
+  .calendar-icon {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    margin-left: 10px;
+  }
+  
+  .task-date-time-input {
+    padding: 10px;
+    font-size: 14px;
+    margin-left: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+.add-item-input {
+    font-family: 'Poppins', Arial, sans-serif;
+    flex: 1;
+    padding: 10px 15px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    color: #333;
+    background-color: #f2f2f2;
+    transition: background-color 0.3s, border 0.3s; /* Smooth transitions */
+  }
+  
+.add-item-input::placeholder {
+    color: #aaa;
+  }
+  
+.add-item-input:focus {
+    background-color: #ffffff; /* White background on focus */
+   /* Blue border on focus */
+    border-radius: 8px; /* Ensure the border radius stays rounded */
+    border: 2px solid #007BFF;
+  }
+  
+.task-date-input {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: none;
+    background-color: #f2f2f2;
+    color: #555;
+}
+.task-date-input:focus {
+    border: 2px solid #007BFF;
+    background-color: #ffffff;
+  }
+
+
+  
+.container .All-section .tasks-section
+{
+    width:100%;
+    height:auto;
+    padding: 20px;
+}
+
+.tasks-header {
+    font-size: 15px;
+    font-weight: 500;
+    margin-bottom: 10px;
+  }
+  
+.tasks-list {
+    list-style: none;
+ 
+}
+  
+.task-item {
+    padding: 10px 15px;
+    font-size: 15px;
+    color: #333;
+    border-bottom: 1px solid #f2f2f2;
+}
+  
+  .task-item:last-child {
+    border-bottom: none;
+  }
+.task-date {
+    font-size: 14px;
+    color: #555;
+ }
+
+ 
+.calendar-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none; /* Hidden by default */
+  justify-content: center;
+  align-items: center;
+}
+
+.calendar-container {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  width: 300px;
+}
+
+.calendar-container h3 {
+  margin-bottom: 15px;
+}
+
+.calendar-input {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.calendar-input:focus {
+  border: 2px solid #007BFF;
+}
+
+.modal-buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+}
+
+.cancel-btn {
+  background-color: #f44336;
+  color: white;
+}
+
+.ok-btn {
+  background-color: #4CAF50;
+  color: white;
+}
+
+/* Tasks List */
+.tasks-list {
+  list-style: none;
+ 
+}
+
+.task-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.task-text {
+  font-size: 16px;
+}
+
+.task-date-time {
+  font-size: 14px;
+  color: gray;
+}
+/* Completed Tasks Section */
+.completed-tasks-section {
+  margin-top: 30px;
+}
+
+.completed-tasks-section h2 {
+  color: #000;
+  margin-left: 20px;
+}
+
+.tasks-list {
+  list-style: none;
+  
+  
+}
+
+.task-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+
+  margin-bottom: 10px;
+}
+
+.completed-task{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+  background-color: #f2f2f2;
+  text-decoration: line-through;
+  margin-bottom: 10px;
+  width:90%;
+  margin-left: 20px;
+
+}
+
+.complete-btn:hover {
+  background-color: #45a049;
+}
+
+.container .detailsection
+{
+ 
+  height:100%;
+  width:35%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  
+}
+.container .detailsection h4
+{
+
+}
+.container .detailsection button
+{
+  width:120px;
+  height:40px;
+  color:#fff;
+  background-color: #90caf92a;
+}
+.container .detailsection .task-content
+{
+  display: flex;
+  justify-content: space-between;
+  padding:10px;
+}
+.container .detailsection .task-content img
+{
+  width:20px;
+  height:20px;
+}
+
+.container .detailsection .soustasktext
+{
+  font-family: 'Poppins', Arial, sans-serif;
+  flex: 1;
+  padding: 10px 15px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+  color: #333;
+  width:90%;
+  margin: 10px 20px;
+  background-color: #f2f2f2;
+  transition: background-color 0.3s, border 0.3s;
+}
+.container .detailsection .soustasktext:focus
+{
+  background-color: #ffffff; /* White background on focus */
+   /* Blue border on focus */
+    border-radius: 8px; /* Ensure the border radius stays rounded */
+    border: 2px solid #007BFF;
+}
+.sousListTask
+{
+  
+}
+.sousTaskItem
+{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border:.5px solid #ccc;
+  border-radius: 5px;
+
+  margin-bottom: 10px;
+}
+#priority-select {
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  font-size: 14px;
+  cursor: pointer;
+}
